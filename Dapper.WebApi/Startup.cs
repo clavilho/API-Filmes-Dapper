@@ -24,6 +24,8 @@ namespace projeto.movie.api
         {
             services.AddTransient<ICommandText, CommandText>();
             services.AddTransient<IMovieRepository, MovieRepository>();
+            services.AddTransient<ICommandTextGenre, CommandTextGenre>();
+            services.AddTransient<IGenreRepository, GenreRepository>();
             services.AddMvc();
 
 
